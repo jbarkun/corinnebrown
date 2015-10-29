@@ -1,4 +1,8 @@
 
+<div id="copyright">
+	Copyright &copy; Brown Design Group <?php echo date('Y') ?>
+</div>
+
 <!-- Javascript -->
 
 <!-- Bootstrap -->
@@ -9,4 +13,21 @@
 <script src="js/lib/jquery.easing.min.js"></script>
 <script src="js/lib/supersized.3.2.7.min.js"></script>
 <script src="js/lib/supersized.shutter.min.js"></script>
+<script src="js/lib/jquery.touchwipe.min.js"></script>
+
+<script type="text/javascript">
+	if ($('#nav-prev')) {
+		$("body").touchwipe({
+			wipeLeft: function() { 
+			 $("#nav-prev").trigger('click');
+		 },
+			wipeRight: function() { 
+			 $("#nav-next").trigger('click');
+		 },
+			preventDefaultEvents: true
+		});
+	}
+	
+</script>
+
 <?php endif; ?>

@@ -1,7 +1,7 @@
 // Navbar styles
 
 #nav-main {
-	background: rgba($brown-med,0.5);
+	background: rgba($brown-med,0.7);
 	width: 100%;
 }
 
@@ -54,7 +54,7 @@
 }
 
 
-@media screen and (max-width: $breakpoint-2) {
+@media screen and (max-width: $breakpoint-2 - 1px) {
 	.nav {
 		&:not(#index-nav) {
 			padding-top: 0;
