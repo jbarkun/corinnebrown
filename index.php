@@ -1,27 +1,26 @@
+<?php $active = 'index' ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Brown Design Group</title>
+    <title>Brown Design Group ASID, Inc.</title>
 
-    <? include('dependencies/files.php') ?>
+    <?php include('dependencies/header.php') ?>
 
 </head>
-<body>
-<div id="content">
-    <div id="logo_wrapper">
-        <img id="index_logo" src="images/index_page/logo_4.png" alt="Brown Design Group Logo">
-        <div id="index_menu">
-            <ul class="nav nav-pills nav-justified">
-                <li><a href="portfolio.php">PORTFOLIO</a></li>
-                <li><a href="about.php">ABOUT</a></li>
-                <li><a href="process.php">PROCESS</a></li>
-                <li><a href="contact.php">CONTACT</a></li>
-            </ul>
-        </div>
-    </div>
-</div>
+<body class="page-index">
+	
+	<div class="wrapper wrapper-index text-center">
+		<img id="index-logo" src="img/logo/logo-vert-white.png" alt="Brown Design Group Logo">
+			<ul id="index-nav" class="nav nav-pills">
+				 <li><a href="portfolio.php">Portfolio</a></li>
+				 <li><a href="about.php">About</a></li>
+				 <li><a href="process.php">Process</a></li>
+				 <li><a href="contact.php">Contact</a></li>
+			</ul>
+	</div>
 
+<?php include('dependencies/footer.php') ?>
 
 <script type="text/javascript">
 
@@ -36,9 +35,9 @@
             // Components
             slide_links				:	'blank',	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
             slides 					:  	[			// Slideshow Images
-                {image : 'images/index_page/bdr1.jpg'},
-                {image : 'images/index_page/bk1.jpg'},
-                {image : 'images/index_page/ia1.jpg'}
+                {image : 'img/portfolio/baumer-mammoth-lakes/bdr1.jpg'},
+                {image : 'img/portfolio/other/bk1.jpg'},
+                {image : 'img/portfolio/iantuono-mammoth-lakes/ia1.jpg'}
             ]
         });
     });

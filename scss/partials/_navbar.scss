@@ -1,0 +1,78 @@
+// Navbar styles
+
+#nav-main {
+	background: rgba($brown-med,0.5);
+	width: 100%;
+}
+
+.navbar {
+	border-radius: 0;
+	border: none;
+	height: 100px;
+	margin-bottom: 40px;
+}
+
+.nav {
+	&:not(#index-nav) {
+		padding-top: 23px;
+	}
+	> li {
+		> a {
+			color: $white;
+			@include transition(0.2s);
+			&:hover, &:focus {
+				color: $brown-dark;
+				background: transparent;
+			}
+			&.active {
+				color: $brown-dark;
+			}
+		}
+	 }
+}
+
+.navbar-header {
+	padding: 25px 15px;
+}
+
+
+.navbar-brand {
+	padding: 0;
+	margin-top: -15px;
+	> img {
+		width: 275px;
+	}
+}
+
+.navbar-toggle {
+	border: 1px solid rgba($white, 0.4);
+	border-radius: 0;
+	.icon-bar {
+		background: rgba($white, 0.8);
+		height: 1px;
+	}
+}
+
+
+@media screen and (max-width: $breakpoint-2) {
+	.nav {
+		&:not(#index-nav) {
+			padding-top: 0;
+		}
+		> li {
+			> a {
+				&.active {
+					color: $brown-light;
+				}
+			}
+		}
+	}
+	.navbar-brand {
+		max-width: 75%;
+	}	
+	.navbar-collapse {
+		position: relative;
+		z-index: 9;
+		background: $brown-dark;
+	}
+}

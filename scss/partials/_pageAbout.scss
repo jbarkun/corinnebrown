@@ -1,0 +1,19 @@
+// About page styles
+
+.highlight {
+	font-style: italic;
+	margin-bottom: 40px;
+}
+
+.footer-img {
+	padding-top: 40px;
+}
+
+@media screen and (max-width: $breakpoint-2) {
+	#img-about {
+		width: 100%;
+		max-width: 400px;
+		display: block;
+		margin: 0 auto 50px;
+	}
+}

@@ -1,0 +1,38 @@
+
+#index-logo {
+    max-width: 600px;
+	 width: 100%;
+}
+
+#index-nav {
+    margin: 70px 0 0;
+	 > li {
+		float: none;
+		> a {
+			&:hover, &:focus {
+				color: $brown-light;
+			}
+		}
+	 }
+}
+
+@media screen and (min-width: $breakpoint-2) {
+	// Tablet & Desktop +
+	#index-nav {
+		> li {
+			display: inline-block;
+		}
+	}
+	
+	.wrapper-index {
+		@include vertical-align;
+  }
+
+}
+
+@media screen and (max-width: $breakpoint-2) {
+	// Mobile
+	.wrapper-index {
+		margin-top: 100px;
+	}
+}
