@@ -63,7 +63,7 @@ img {
 	 color: $brown-dark;
 }
 
-body.page-portfolio-inner #copyright {
+body.page-portfolio-inner #copyright, body.page-index #copyright  {
   position: absolute;
   bottom: 0;
   width: 100%;

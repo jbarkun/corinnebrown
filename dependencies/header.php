@@ -27,12 +27,6 @@
 
 <!-- Bootstrap -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-<!-- Optional theme -->
-<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">-->
-
-<!--For Carousel Background-->
-<link rel="stylesheet" href="css/lib/supersized.shutter.css">
-<link rel="stylesheet" href="css/lib/supersized.css">
 
 <!-- Fonts & Icons -->
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700|Droid+Serif' rel='stylesheet' type='text/css'>

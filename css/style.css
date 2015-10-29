@@ -107,7 +107,7 @@ img {
   color: #616161;
 }
 
-body.page-portfolio-inner #copyright {
+body.page-portfolio-inner #copyright, body.page-index #copyright {
   position: absolute;
   bottom: 0;
   width: 100%;

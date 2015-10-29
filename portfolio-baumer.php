@@ -35,46 +35,42 @@
 	 
 	 <script type="text/javascript">
 
-    jQuery(function($){
-        $.supersized({
-
-            //Functionality
-            slide_interval          :   3000,		// Length between transitions
-            transition              :   1, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
-            transition_speed		:	1400,		// Speed of transition
-
-            // Components
-            slide_links				:	'blank',	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
-            slides 					:  	[			// Slideshow Images
-                {image : 'img/portfolio/baumer-mammoth-lakes/bb3.jpg'},
-                {image : 'img/portfolio/baumer-mammoth-lakes/bb4.jpg'},
-                {image : 'img/portfolio/baumer-mammoth-lakes/bb5.jpg'},
-                {image : 'img/portfolio/baumer-mammoth-lakes/bb6.jpg'},
-                {image : 'img/portfolio/baumer-mammoth-lakes/bd1.jpg'},
-                {image : 'img/portfolio/baumer-mammoth-lakes/bdr1.jpg'},
-                {image : 'img/portfolio/baumer-mammoth-lakes/bfr1.jpg'},
-                {image : 'img/portfolio/baumer-mammoth-lakes/bfr3.jpg'},
-                {image : 'img/portfolio/baumer-mammoth-lakes/bk1.jpg'},
-            ]
-        });
+	    jQuery(function($){
+		
+			$.backstretch([
+					"img/portfolio/baumer-mammoth-lakes/bb3.jpg"
+				 , "img/portfolio/baumer-mammoth-lakes/bb4.jpg"
+				 , "img/portfolio/baumer-mammoth-lakes/bb5.jpg"
+				 , "img/portfolio/baumer-mammoth-lakes/bb6.jpg"
+				 , "img/portfolio/baumer-mammoth-lakes/bd1.jpg"
+				 , "img/portfolio/baumer-mammoth-lakes/bdr1.jpg"
+				 , "img/portfolio/baumer-mammoth-lakes/bfr1.jpg"
+				 , "img/portfolio/baumer-mammoth-lakes/bfr3.jpg"
+				 , "img/portfolio/baumer-mammoth-lakes/bk1.jpg"
+			  ], {duration: 3000, fade: 1400}
+			);
 		  
-		  $("#nav-next").click(function(){
-				api.nextSlide();
-			});
-		  
-		  $("#nav-prev").click(function(){
-				api.prevSlide();
-			});
-		  
-		  $("#nav-play").click(function(){
-				api.playToggle();
-				$("#nav-play").toggleClass( "paused" );
-			});
-		  
-		  $("#nav-toggle").click(function(){
-				$(".slideshow-nav").toggleClass( "tray-hidden" );
-			});
-    });
+			$("#nav-next").click(function(){
+				 $('body').backstretch("next");
+			 });
+			
+			$("#nav-prev").click(function(){
+				 $('body').backstretch("prev");
+			 });
+			
+			$("#nav-play").click(function(){
+				 if ($('#nav-play').hasClass('paused')) {
+					$('body').backstretch("resume");
+				 } else {
+					$('body').backstretch("pause");
+				 }
+				 $("#nav-play").toggleClass( "paused" );
+			 });
+			
+			$("#nav-toggle").click(function(){
+				 $(".slideshow-nav").toggleClass( "tray-hidden" );
+			 });
+		});
 
 </script>
 	 

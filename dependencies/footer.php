@@ -10,24 +10,5 @@
 
 <?php if ($active == 'index' || $active == 'portfolio' || $active == 'contact'): ?>
 <!-- Carousel Background -->
-<script src="js/lib/jquery.easing.min.js"></script>
-<script src="js/lib/supersized.3.2.7.min.js"></script>
-<script src="js/lib/supersized.shutter.min.js"></script>
-<script src="js/lib/jquery.touchwipe.min.js"></script>
-
-<script type="text/javascript">
-	if ($('#nav-prev')) {
-		$("body").touchwipe({
-			wipeLeft: function() { 
-			 $("#nav-prev").trigger('click');
-		 },
-			wipeRight: function() { 
-			 $("#nav-next").trigger('click');
-		 },
-			preventDefaultEvents: true
-		});
-	}
-	
-</script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
 <?php endif; ?>

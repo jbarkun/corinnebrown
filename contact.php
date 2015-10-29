@@ -47,21 +47,9 @@
 	 
 	 <script type="text/javascript">
 
-    jQuery(function($){
-        $.supersized({
-
-            //Functionality
-            slide_interval          :   4900,		// Length between transitions
-            transition              :   1, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
-            transition_speed		:	1400,		// Speed of transition
-
-            // Components
-            slide_links				:	'blank',	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
-            slides 					:  	[			// Slideshow Images
-                {image : 'img/contact/bg_contact.jpg'}
-            ]
-        });
-    });
+	     jQuery(function($){
+				$.backstretch("img/contact/bg_contact.jpg");
+			});
 
 </script>
 	 
