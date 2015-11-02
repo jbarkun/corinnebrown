@@ -1,4 +1,7 @@
-<?php $active = 'contact' ?>
+<?php
+session_start();
+$active = 'contact';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,6 +43,26 @@
 				</div>
 				
 			</div>
+		</div>
+	</div>
+
+	<div class="wrapper wrapper-contact_form">
+		<div class="row">
+			<form action="dependencies/sendemail.php" method="post">
+				<input type="text" name="name" placeholder="Your Name" value="<? if(isset($_SESSION['input']['name'])){echo $_SESSION['input']['name'];} ?>">
+				<input type="email" name="email" placeholder="Your Email Address" value="<? if(isset($_SESSION['input']['email'])){echo $_SESSION['input']['email'];} ?>">
+				<input type="text" name="title" placeholder="Message Title" value="<? if(isset($_SESSION['input']['title'])){echo $_SESSION['input']['title'];} ?>">
+				<textarea name="message" cols="30" rows="10" placeholder="Please type your message here"><? if(isset($_SESSION['input']['message'])){echo $_SESSION['input']['message'];} ?></textarea>
+				<? if(isset($_SESSION['input'])){
+					unset($_SESSION['input']);
+				} ?>
+				<div class="g-recaptcha" data-sitekey="6LfLKRATAAAAAJ8_MVDiwCrEWsXvLypyZw0RwkXb"></div>
+				<input type="submit" value="Send Message">
+			</form>
+			<? if (isset($_SESSION['message'])): ?>
+			<p style="color: red"><? echo $_SESSION['message'] ?></p>
+				<? unset($_SESSION['message']) ?>
+			<? endif ?>
 		</div>
 	</div>
 

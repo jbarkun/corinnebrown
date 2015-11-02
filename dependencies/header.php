@@ -23,6 +23,11 @@
 <meta name="msapplication-config" content="favicons/browserconfig.xml">
 <meta name="theme-color" content="#8c7f79">
 
+<? if ($active == 'contact'): ?>
+<script src='https://www.google.com/recaptcha/api.js?hl=fr-CA'></script>
+<!--remove hl=fr-CA to turn back to English-->
+<? endif; ?>
+
 <!-- CSS Files -->
 
 <!-- Bootstrap -->
