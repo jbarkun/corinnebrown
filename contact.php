@@ -52,22 +52,30 @@ $active = 'contact';
         <div class="col-md-6">
             <div class="wrapper wrapper-contact_form">
                 <form id="contactForm" action="dependencies/sendemail.php" method="post">
-                    <input type="text" id="name" name="name" placeholder="Your Name"
+                    <fieldset>
+								<input type="text" id="name" name="name" placeholder="Your Name"
                            value="<? if (isset($_SESSION['input']['name'])) {
                                echo $_SESSION['input']['name'];
                            } ?>">
-                    <input type="email" id="email" name="email" placeholder="Your Email Address"
+							</fieldset>
+						  <fieldset>
+								<input type="email" id="email" name="email" placeholder="Your Email Address"
                            value="<? if (isset($_SESSION['input']['email'])) {
                                echo $_SESSION['input']['email'];
                            } ?>">
-                    <input type="text" id="title" name="title" placeholder="Message Title"
+						  </fieldset>
+						  <fieldset>
+								<input type="text" id="title" name="title" placeholder="Message Title"
                            value="<? if (isset($_SESSION['input']['title'])) {
                                echo $_SESSION['input']['title'];
                            } ?>">
-        <textarea id="message" name="message" cols="30" rows="10"
-                  placeholder="Please type your message here"><? if (isset($_SESSION['input']['message'])) {
-                echo $_SESSION['input']['message'];
+						  </fieldset>
+							<fieldset>
+									<textarea id="message" name="message" cols="30" rows="5"
+									placeholder="Please type your message here"><? if (isset($_SESSION['input']['message'])) {
+									echo $_SESSION['input']['message'];
             } ?></textarea>
+							</fieldset>
                     <? if (isset($_SESSION['input'])) {
                         unset($_SESSION['input']);
                     } ?>
@@ -123,12 +131,6 @@ $active = 'contact';
     });
 </script>
 
-<!--	Style Error Message-->
-<style>
-    .error {
-        color: red;
-    }
-</style>
 <?php include('dependencies/footer.php') ?>
 
 <script type="text/javascript">

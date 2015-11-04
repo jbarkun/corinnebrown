@@ -48,7 +48,7 @@
 
 <? if ($active == 'contact'): ?>
 <!--Google reCaptcha-->
-<script src='https://www.google.com/recaptcha/api.js?hl=fr-CA'></script><!--remove hl=fr-CA to turn back to English-->
+<script src='https://www.google.com/recaptcha/api.js'></script><!--remove hl=fr-CA to turn back to English-->
 <!--jQuery Validator-->
 <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js"></script>
 <? endif; ?>
