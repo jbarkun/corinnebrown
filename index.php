@@ -12,12 +12,12 @@
 	
 	<div class="wrapper wrapper-index text-center">
 		<img id="index-logo" src="img/logo/logo-vert-white.png" alt="Brown Design Group Logo">
-			<ul id="index-nav" class="nav nav-pills">
-				 <li><a href="portfolio.php">Portfolio</a></li>
-				 <li><a href="about.php">About</a></li>
-				 <li><a href="process.php">Process</a></li>
-				 <li><a href="contact.php">Contact</a></li>
-			</ul>
+		<ul id="index-nav" class="nav nav-pills">
+			<li><a href="portfolio.php">Portfolio</a></li>
+			<li><a href="about.php">About</a></li>
+			<li><a href="process.php">Process</a></li>
+			<li><a href="contact.php">Contact</a></li>
+		</ul>
 	</div>
 
 <?php include('dependencies/footer.php') ?>

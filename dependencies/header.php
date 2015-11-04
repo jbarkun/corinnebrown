@@ -23,10 +23,7 @@
 <meta name="msapplication-config" content="favicons/browserconfig.xml">
 <meta name="theme-color" content="#8c7f79">
 
-<? if ($active == 'contact'): ?>
-<script src='https://www.google.com/recaptcha/api.js?hl=fr-CA'></script>
-<!--remove hl=fr-CA to turn back to English-->
-<? endif; ?>
+
 
 <!-- CSS Files -->
 
@@ -47,3 +44,11 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <!-- Modernizr -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+
+<? if ($active == 'contact'): ?>
+<!--Google reCaptcha-->
+<script src='https://www.google.com/recaptcha/api.js?hl=fr-CA'></script><!--remove hl=fr-CA to turn back to English-->
+<!--jQuery Validator-->
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js"></script>
+<? endif; ?>

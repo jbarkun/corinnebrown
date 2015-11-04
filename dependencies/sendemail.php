@@ -6,10 +6,36 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST'){
     header('location: ../contact.php');
 }
 
-
 session_start();
 require_once __DIR__ . '/vendor/autoload.php';
 
+/*
+ * Validate user input
+ */
+use Respect\Validation\Validator as validator;
+
+foreach($_POST as $key => $value){
+    if (strlen($value) <= 0){
+        $_SESSION['message'] = 'Please enter all required fields';
+        $_SESSION['input'] = $_POST;
+        header('location: ../contact.php');
+        exit;
+    }
+}
+
+$emailValid = validator::email()->validate($_POST['email']);
+
+if (!$emailValid){
+    $_SESSION['message'] = 'Please enter a valid email address';
+    $_SESSION['input'] = $_POST;
+    header('location: ../contact.php');
+    exit;
+};
+
+
+/*
+ * Validate Google reCaptcha
+ */
 $recaptcha = new \ReCaptcha\ReCaptcha('6LfLKRATAAAAAGgMk7-CDn62De5R-afRGmTuNNpC');
 
 $resp = $recaptcha->verify($_POST['g-recaptcha-response'], $_SERVER['REMOTE_ADDR']);
