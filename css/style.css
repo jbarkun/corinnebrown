@@ -549,7 +549,7 @@ body.page-portfolio-inner {
 
 .wrapper-contact {
   background: rgba(255, 255, 255, 0.6);
-  padding: 100px;
+  padding: 40px 0;
 }
 
 input, textarea {
@@ -611,6 +611,17 @@ label.error {
     top: 50%;
     transform: translateY(-50%);
     margin-top: -100px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .wrapper-contact {
+    padding: 100px;
+  }
+}
+@media screen and (max-width: 768px) {
+  label.error {
+    position: static;
+    margin-bottom: 10px;
   }
 }
 @media screen and (max-height: 750px) {

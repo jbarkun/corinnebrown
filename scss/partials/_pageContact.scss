@@ -18,7 +18,7 @@
 
 .wrapper-contact {
 		background: rgba($white, 0.6);
-		padding: 100px;
+		padding: 40px 0;
 }
 
 // Inputs
@@ -84,6 +84,19 @@ label.error {
 		margin-top: -100px;
 	}
 
+}
+
+@media screen and (min-width: $breakpoint-2) {
+	.wrapper-contact {
+		padding: 100px;
+	}
+}
+
+@media screen and (max-width: $breakpoint-2) {
+	label.error {
+		position: static;
+		margin-bottom: $input-spacing;
+	}
 }
 
 @media screen and (max-height: 750px) {
