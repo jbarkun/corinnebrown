@@ -65,7 +65,13 @@
 	&:hover {
 		box-shadow:0 0 5px #fff;
 	}
-	&.coming-soon {
+}
+
+.hovereffect.coming-soon {
+	.overlay {
+		background-color: rgba(200, 200, 200, 0.5);
+	}
+	a.info {
 		pointer-events: none;
 		color: $black;
 		border-color: $black;

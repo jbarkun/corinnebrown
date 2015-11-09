@@ -48,22 +48,22 @@
 			
 			<!-- Portfolio Item 4 -->
 			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-				<div class="hovereffect">
+				<div class="hovereffect coming-soon">
 					 <img class="img-responsive" src="img/portfolio/cover/martis-camp-lake-tahoe.jpg" alt="">
 					 <div class="overlay">
 						 <h2>Martis Camp <span class="small">Lake Tahoe</span></h2>
-						 <a class="info coming-soon" href="#">Coming Soon</a>
+						 <a class="info" href="#">Coming Soon</a>
 					 </div>
 				</div>
 		  </div>
 			
 			<!-- Portfolio Item 5 -->
 			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-				<div class="hovereffect">
+				<div class="hovereffect coming-soon">
 					 <img class="img-responsive" src="img/portfolio/cover/mccall-idaho.jpg" alt="">
 					 <div class="overlay">
 						 <h2>McCall <span class="small">Idaho</span></h2>
-						 <a class="info coming-soon" href="#">Coming Soon</a>
+						 <a class="info" href="#">Coming Soon</a>
 					 </div>
 				</div>
 		  </div>

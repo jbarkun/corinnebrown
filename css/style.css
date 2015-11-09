@@ -349,7 +349,11 @@ a:hover, a:focus {
 .hovereffect a.info:hover {
   box-shadow: 0 0 5px #fff;
 }
-.hovereffect a.info.coming-soon {
+
+.hovereffect.coming-soon .overlay {
+  background-color: rgba(200, 200, 200, 0.5);
+}
+.hovereffect.coming-soon a.info {
   pointer-events: none;
   color: #222222;
   border-color: #222222;

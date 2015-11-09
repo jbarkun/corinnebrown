@@ -1,5 +1,6 @@
 
 <div id="copyright">
+	<?php date_default_timezone_set('America/Los_Angeles'); ?>
 	Copyright &copy; Brown Design Group <?php echo date('Y') ?>
 </div>
 
