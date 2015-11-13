@@ -22,9 +22,13 @@
 		</div>
 		<div class="slideshow-tray">
 			<div class="wrapper">
-				<h1>Mammoth Lakes</h1>
-				<h2>Iantuono</h2>
-				<p>Applied Photography</p>
+				<div class="row">
+					<div class="col-sm-12">
+						<h1>Mammoth Lakes</h1>
+						<h2>Iantuono</h2>
+						<p>Applied Photography</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

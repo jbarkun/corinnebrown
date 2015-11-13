@@ -115,6 +115,11 @@ body.page-portfolio-inner #copyright, body.page-index #copyright {
   color: white;
 }
 
+@media screen and (max-height: 630px) {
+  body.page-portfolio-inner #copyright, body.page-index #copyright {
+    position: static;
+  }
+}
 h1 {
   font-size: 18px;
   font-size: 1.8rem;
@@ -255,7 +260,8 @@ a:hover, a:focus {
   #index-nav > li {
     display: inline-block;
   }
-
+}
+@media screen and (min-height: 630px) and (min-width: 768px) {
   .wrapper-index {
     position: relative;
     top: 50%;
@@ -383,7 +389,7 @@ a:hover, a:focus {
   transition-delay: .2s;
 }
 
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 1024px) {
   .hovereffect img {
     -ms-transform: scale(1.2);
     -webkit-transform: scale(1.2);
@@ -537,6 +543,7 @@ body.page-portfolio-inner {
 }
 .contact-content {
   text-align: center;
+  margin-bottom: 40px;
 }
 
 #contact-logo {
@@ -609,7 +616,7 @@ label.error {
   right: 0;
 }
 
-@media screen and (min-width: 768px) and (min-height: 750px) {
+@media screen and (min-width: 1025px) and (min-height: 750px) {
   .wrapper-contact {
     position: relative;
     top: 50%;

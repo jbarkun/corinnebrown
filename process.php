@@ -19,7 +19,7 @@
 	
 			  <p>You will also have access to the best sources for lighting, fabrics, window coverings, furnishings and artwork. The Brown Design Group will do all of the research for the best possible solutions.</p>
 	
-			  <p>Every great space has to start somewhere and can benefit from Corinne's unique point of view, even if you only need to choose paint colors, improve a single room or replace furnishings or window coverings to projects all over the country. Whether the location is an apartment in NYC, a beach house,desert house, lake house, or ski house, Brown Design Group has the resources and expertise required.</p>
+			  <p>Every great space has to start somewhere and can benefit from Corinne's unique point of view, even if you only need to choose paint colors, improve a single room or replace furnishings or window coverings to projects all over the country. Whether the location is an apartment in NYC, a beach house, desert house, lake house, or ski house, Brown Design Group has the resources and expertise required.</p>
 	
 			  <p>Corinne and her firm can execute very large projects, beginning in the architectural phase and see them through to perfect completion addressing every detail.</p>
 	

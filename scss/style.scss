@@ -70,6 +70,12 @@ body.page-portfolio-inner #copyright, body.page-index #copyright  {
   color: $white;
 }
 
+@media screen and (max-height: 630px) {
+	body.page-portfolio-inner #copyright, body.page-index #copyright {
+		position: static;
+	}
+}
+
 // Typography
 
 h1 {

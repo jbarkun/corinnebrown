@@ -22,9 +22,13 @@
 		</div>
 		<div class="slideshow-tray">
 			<div class="wrapper">
-				<h1>Bishop</h1>
-				<h2>McCoy</h2>
-				<p>Lesley Allen Photograpy</p>
+				<div class="row">
+					<div class="col-sm-12">
+						<h1>Bishop</h1>
+						<h2>McCoy</h2>
+						<p>Lesley Allen Photograpy</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
