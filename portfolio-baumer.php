@@ -1,4 +1,7 @@
-<?php $active = 'portfolio' ?>
+<?php
+$active = 'portfolio';
+$desc = "View The Brown Design Group's Baumer project at Mammoth Lakes.";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,44 +42,56 @@
 	 
 	 <script type="text/javascript">
 
-	    jQuery(function($){
-		
-			$.backstretch([
-					"img/portfolio/baumer-mammoth-lakes/bb3.jpg"
-				 , "img/portfolio/baumer-mammoth-lakes/bb4.jpg"
-				 , "img/portfolio/baumer-mammoth-lakes/bb5.jpg"
-				 , "img/portfolio/baumer-mammoth-lakes/bb6.jpg"
-				 , "img/portfolio/baumer-mammoth-lakes/bd1.jpg"
-				 , "img/portfolio/baumer-mammoth-lakes/bdr1.jpg"
-				 , "img/portfolio/baumer-mammoth-lakes/bfr1.jpg"
-				 , "img/portfolio/baumer-mammoth-lakes/bfr3.jpg"
-				 , "img/portfolio/baumer-mammoth-lakes/bk1.jpg"
-			  ], {duration: 3000, fade: 1400}
-			);
+		jQuery(function($){
 		  
-			$("#nav-next").click(function(){
-				 $('body').backstretch("next");
-			 });
-			
-			$("#nav-prev").click(function(){
-				 $('body').backstretch("prev");
-			 });
-			
-			$("#nav-play").click(function(){
-				 if ($('#nav-play').hasClass('paused')) {
-					$('body').backstretch("resume");
-				 } else {
-					$('body').backstretch("pause");
-				 }
-				 $("#nav-play").toggleClass( "paused" );
-			 });
-			
-			$("#nav-toggle").click(function(){
-				 $(".slideshow-nav").toggleClass( "tray-hidden" );
-			 });
-		});
-
-</script>
+			  $.supersized({
+					  
+				  // Functionality
+				  slide_interval       :  3000,		// Length between transitions
+				  transition           :   1, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+				  transition_speed		:	700,		// Speed of transition
+															  
+				  // Components							
+				  slide_links				:	false,	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
+				  slides 					:  	[			// Slideshow Images
+													  {image : 'img/portfolio/baumer/bm01.jpg'},
+													  {image : 'img/portfolio/baumer/bm02.jpg'},
+													  {image : 'img/portfolio/baumer/bm03.jpg'},
+													  {image : 'img/portfolio/baumer/bm04.jpg'},
+													  {image : 'img/portfolio/baumer/bm05.jpg'},
+													  {image : 'img/portfolio/baumer/bm06.jpg'},
+													  {image : 'img/portfolio/baumer/bm07.jpg'},
+													  {image : 'img/portfolio/baumer/bm08.jpg'},
+													  {image : 'img/portfolio/baumer/bm09.jpg'},
+													  {image : 'img/portfolio/baumer/bm10.jpg'},
+													  {image : 'img/portfolio/baumer/bm11.jpg'},
+													  {image : 'img/portfolio/baumer/bm12.jpg'},
+													  {image : 'img/portfolio/baumer/bm13.jpg'},
+											  ]
+				  
+			  });
+		  
+			  $("#nav-next").click(function(){
+					api.nextSlide();
+				});
+			  
+			  $("#nav-prev").click(function(){
+					api.prevSlide();
+				});
+			  
+			  $("#nav-play").click(function(){
+					api.playToggle();
+					$("#nav-play").toggleClass( "paused" );
+				});
+			  
+			  $("#nav-toggle").click(function(){
+					$(".slideshow-nav").toggleClass( "tray-hidden" );
+				});
+		  
+			  
+		  });
+  
+  </script>
 	 
 </body>
 </html>

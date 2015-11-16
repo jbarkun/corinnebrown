@@ -1,4 +1,7 @@
-<?php $active = 'about' ?>
+<?php
+$active = 'about';
+$desc = "The Brown Design Group has created an impressive portfolio of work, including outstanding mountain vacation home interior design.";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,9 +30,11 @@
 				 <p>My desire is to create warm personal and inviting homes for people that I care about.</p>
 			 </div>
 			 <p>
-				<a href="about2.php">More</a> <br />
 				Corinne Brown, ASID
 			 </p>
+			 <div class="btn-div">
+				<a class="btn" href="about2.php">Read More</a>
+			 </div>
 		</div>
 	</div>
 	<div class="footer-img row">

@@ -159,6 +159,10 @@ a:hover, a:focus {
   text-decoration: none;
 }
 
+b, strong {
+  font-weight: 700;
+}
+
 .nav {
   font-size: 16px;
   font-size: 1.6rem;
@@ -168,6 +172,55 @@ a:hover, a:focus {
 
 .text-center {
   text-align: center;
+}
+
+.btn-div a {
+  position: relative;
+  display: inline-block;
+  margin: 10px 0 0;
+  outline: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.35em;
+  padding: 12px 10px 10px;
+  color: #8c7f79;
+  text-shadow: none;
+  font-weight: 700;
+}
+.btn-div a::before, .btn-div a::after {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #8c7f79;
+  content: '';
+  -webkit-transition: -webkit-transform 0.3s;
+  -moz-transition: -moz-transform 0.3s;
+  transition: transform 0.3s;
+  -webkit-transform: scale(0.85);
+  -moz-transform: scale(0.85);
+  transform: scale(0.85);
+}
+.btn-div a::after {
+  opacity: 0;
+  -webkit-transition: top 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+  -moz-transition: top 0.3s, opacity 0.3s, -moz-transform 0.3s;
+  transition: top 0.3s, opacity 0.3s, transform 0.3s;
+}
+.btn-div a:hover, .btn-div a:focus {
+  outline: none;
+  color: #8c7f79;
+}
+.btn-div a:hover::before, .btn-div a:hover::after, .btn-div a:focus::before, .btn-div a:focus::after {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  transform: scale(1);
+}
+.btn-div a:hover::after, .btn-div a:focus::after {
+  top: 0%;
+  opacity: 1;
 }
 
 #nav-main {
@@ -194,11 +247,11 @@ a:hover, a:focus {
   transition: all 0.2s ease;
 }
 .nav > li > a:hover, .nav > li > a:focus {
-  color: #616161;
+  color: #c6bfbc;
   background: transparent;
 }
 .nav > li > a.active {
-  color: #616161;
+  color: #c6bfbc;
 }
 
 .navbar-header {
@@ -208,9 +261,6 @@ a:hover, a:focus {
 .navbar-brand {
   padding: 0;
   margin-top: -15px;
-}
-.navbar-brand > img {
-  width: 275px;
 }
 
 .navbar-toggle {
@@ -290,6 +340,10 @@ a:hover, a:focus {
     margin: 0 auto 50px;
   }
 }
+#supersized-loader {
+  background: transparent;
+}
+
 .hovereffect {
   width: 100%;
   height: 100%;
@@ -328,13 +382,16 @@ a:hover, a:focus {
   text-align: center;
   position: relative;
   font-size: 17px;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(102, 101, 100, 0.9);
   -webkit-transform: translatey(-100px);
   -ms-transform: translatey(-100px);
   transform: translatey(-100px);
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
   padding: 10px;
+}
+.hovereffect h2 .small {
+  color: #C5C5C5;
 }
 
 .hovereffect a.info {
@@ -547,7 +604,7 @@ body.page-portfolio-inner {
 }
 
 #contact-logo {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .contact-sm {

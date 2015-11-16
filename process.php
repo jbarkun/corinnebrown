@@ -1,4 +1,7 @@
-<?php $active = 'process' ?>
+<?php
+$active = 'process';
+$desc = "The Brown Design Group has created an impressive portfolio of work, including outstanding mountain vacation home interior design.";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

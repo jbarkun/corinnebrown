@@ -1,9 +1,13 @@
-<?php $active = 'portfolio' ?>
+<?php
+$active = 'portfolio';
+$desc = "View The Brown Design Group's McCoy project at Bishop.";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Portfolio &ndash; Corinne Brown ASID Inc.</title>
+	 	 
     <?php include('dependencies/header.php') ?>
 </head>
 <body class="page-portfolio-inner">
@@ -37,41 +41,49 @@
 
     <?php include('dependencies/footer.php') ?>
 	 
-	 <script type="text/javascript">
-
-	 jQuery(function($){
-		
-			$.backstretch([
-					"img/portfolio/mccoy-bishop/mc_1.jpg"
-				 , "img/portfolio/mccoy-bishop/mc_2.jpg"
-				 , "img/portfolio/mccoy-bishop/mc_3.jpg"
-				 , "img/portfolio/mccoy-bishop/mc_p.jpg"
-			  ], {duration: 3000, fade: 1400}
-			);
-		  
-			$("#nav-next").click(function(){
-				 $('body').backstretch("next");
-			 });
+	<script type="text/javascript">
+	
+		 jQuery(function($){
 			
-			$("#nav-prev").click(function(){
-				 $('body').backstretch("prev");
-			 });
+				$.supersized({
+						
+					// Functionality
+					slide_interval       :  3000,		// Length between transitions
+					transition           :   1, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+					transition_speed		:	700,		// Speed of transition
+																
+					// Components							
+					slide_links				:	false,	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
+					slides 					:  	[			// Slideshow Images
+														{image : 'img/portfolio/mccoy/mc01.jpg'},
+														{image : 'img/portfolio/mccoy/mc02.jpg'},
+														{image : 'img/portfolio/mccoy/mc03.jpg'},
+														{image : 'img/portfolio/mccoy/mc04.jpg'},
+												]
+					
+				});
 			
-			$("#nav-play").click(function(){
-				 if ($('#nav-play').hasClass('paused')) {
-					$('body').backstretch("resume");
-				 } else {
-					$('body').backstretch("pause");
-				 }
-				 $("#nav-play").toggleClass( "paused" );
-			 });
+				$("#nav-next").click(function(){
+					 api.nextSlide();
+				 });
+				
+				$("#nav-prev").click(function(){
+					 api.prevSlide();
+				 });
+				
+				$("#nav-play").click(function(){
+					 api.playToggle();
+					 $("#nav-play").toggleClass( "paused" );
+				 });
+				
+				$("#nav-toggle").click(function(){
+					 $(".slideshow-nav").toggleClass( "tray-hidden" );
+				 });
 			
-			$("#nav-toggle").click(function(){
-				 $(".slideshow-nav").toggleClass( "tray-hidden" );
-			 });
-		});
-
-</script>
+				
+			});
+	
+	</script>
 	 
 </body>
 </html>

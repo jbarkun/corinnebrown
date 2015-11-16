@@ -1,4 +1,7 @@
-<?php $active = 'index' ?>
+<?php
+$active = 'index';
+$desc = "The Brown Design Group has created an impressive portfolio of work, including outstanding mountain vacation home interior design.";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,12 +29,23 @@
 
     jQuery(function($){
 		
-		$.backstretch([
-				"img/portfolio/baumer-mammoth-lakes/bdr1.jpg"
-			 , "img/portfolio/other/bk1.jpg"
-			 , "img/portfolio/iantuono-mammoth-lakes/ia1.jpg"
-		  ], {duration: 4900, fade: 1400}
-		);
+		$.supersized({
+					  
+			// Functionality
+			slide_interval       :  4500,		// Length between transitions
+			transition           :   1, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+			transition_speed		:	1400,		// Speed of transition
+														
+			// Components							
+			slide_links				:	false,	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
+			slides 					:  	[			// Slideshow Images
+												{image : 'img/portfolio/baumer/bm04.jpg'},
+												{image : 'img/portfolio/other/bk1.jpg'},
+												{image : 'img/portfolio/iantuono/ia08.jpg'},
+										]
+			
+		});
+		
 		
     });
 

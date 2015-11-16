@@ -1,6 +1,7 @@
 <?php
 session_start();
 $active = 'contact';
+$desc = "Contact The Brown Design Group to learn more about how we can design your dream home.";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,13 +20,13 @@ $active = 'contact';
             <img id="contact-logo" src="img/logo/logo-box-brown.png" alt="Corinne Brown Logo"/>
 
             <p>
-                The Brown Design Group <br/>
+                <strong>The Brown Design Group</strong> <br/>
                 3 Oak Tree Way <br/>
                 Mammoth Lakes, CA 93546
             </p>
 
             <p>
-                Mailing address: <br/>
+                <strong>Mailing address</strong> <br/>
                 P.O. Box 100, PMB 332 <br/>
                 Mammoth Lakes, CA 93546-100
             </p>
@@ -35,7 +36,7 @@ $active = 'contact';
                 fax. 760 934 5497
             </p>
 
-            <h2><a href="mailto:julie@designbdg.com">julie@designbdg.com</a></h2>
+            <h2><a href="mailto:julie@designbdg.com">contact@designbdg.com</a></h2>
 
             <h1>Connect with us</h1>
 
@@ -135,7 +136,22 @@ $active = 'contact';
 
 <script type="text/javascript">
     jQuery(function ($) {
-        $.backstretch("img/contact/bg_contact.jpg");
+		
+		$.supersized({
+					  
+			// Functionality
+			slide_interval       :  4500,		// Length between transitions
+			transition           :   1, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+			transition_speed		:	1400,		// Speed of transition
+														
+			// Components							
+			slide_links				:	false,	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
+			slides 					:  	[			// Slideshow Images
+												{image : 'img/contact/bg_contact.jpg'}
+										]
+			
+		});
+		
     });
 </script>
 

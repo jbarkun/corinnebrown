@@ -1,4 +1,7 @@
-<?php $active = 'portfolio' ?>
+<?php
+$active = 'portfolio';
+$desc = "View The Brown Design Group's Iantuono project at Mammoth Lakes.";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,44 +44,53 @@
 
 	 jQuery(function($){
 		
-			$.backstretch([
-					"img/portfolio/iantuono-mammoth-lakes/ia.jpg"
-				 , "img/portfolio/iantuono-mammoth-lakes/ia1.jpg"
-				 , "img/portfolio/iantuono-mammoth-lakes/ia2.jpg"
-				 , "img/portfolio/iantuono-mammoth-lakes/ia3.jpg"
-				 , "img/portfolio/iantuono-mammoth-lakes/ia4.jpg"
-				 , "img/portfolio/iantuono-mammoth-lakes/ia5.jpg"
-				 , "img/portfolio/iantuono-mammoth-lakes/ia6.jpg"
-				 , "img/portfolio/iantuono-mammoth-lakes/ia7.jpg"
-				 , "img/portfolio/iantuono-mammoth-lakes/ia8.jpg"
-				 , "img/portfolio/iantuono-mammoth-lakes/ia9.jpg"
-				 , "img/portfolio/iantuono-mammoth-lakes/ia10.jpg"
-				 , "img/portfolio/iantuono-mammoth-lakes/ia11.jpg"
-				 , "img/portfolio/iantuono-mammoth-lakes/ia12.jpg"
-				 , "img/portfolio/iantuono-mammoth-lakes/ia13.jpg"
-			  ], {duration: 3000, fade: 1400}
-			);
-		  
+			$.supersized({
+					
+				// Functionality
+				slide_interval       :  3000,		// Length between transitions
+				transition           :   1, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+				transition_speed		:	700,		// Speed of transition
+															
+				// Components							
+				slide_links				:	false,	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
+				slides 					:  	[			// Slideshow Images
+													{image : 'img/portfolio/iantuono/ia01.jpg'},
+													{image : 'img/portfolio/iantuono/ia02.jpg'},
+													{image : 'img/portfolio/iantuono/ia03.jpg'},
+													{image : 'img/portfolio/iantuono/ia04.jpg'},
+													{image : 'img/portfolio/iantuono/ia05.jpg'},
+													{image : 'img/portfolio/iantuono/ia06.jpg'},
+													{image : 'img/portfolio/iantuono/ia07.jpg'},
+													{image : 'img/portfolio/iantuono/ia08.jpg'},
+													{image : 'img/portfolio/iantuono/ia09.jpg'},
+													{image : 'img/portfolio/iantuono/ia10.jpg'},
+													{image : 'img/portfolio/iantuono/ia11.jpg'},
+													{image : 'img/portfolio/iantuono/ia12.jpg'},
+													{image : 'img/portfolio/iantuono/ia13.jpg'},
+													{image : 'img/portfolio/iantuono/ia14.jpg'},
+													{image : 'img/portfolio/iantuono/ia15.jpg'},
+											]
+				
+			});
+		
 			$("#nav-next").click(function(){
-				 $('body').backstretch("next");
+				 api.nextSlide();
 			 });
 			
 			$("#nav-prev").click(function(){
-				 $('body').backstretch("prev");
+				 api.prevSlide();
 			 });
 			
 			$("#nav-play").click(function(){
-				 if ($('#nav-play').hasClass('paused')) {
-					$('body').backstretch("resume");
-				 } else {
-					$('body').backstretch("pause");
-				 }
+				 api.playToggle();
 				 $("#nav-play").toggleClass( "paused" );
 			 });
 			
 			$("#nav-toggle").click(function(){
 				 $(".slideshow-nav").toggleClass( "tray-hidden" );
 			 });
+		
+			
 		});
 
 </script>

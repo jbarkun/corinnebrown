@@ -1,3 +1,14 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="description" content="<?php echo $desc ?>">
+
+<!-- Facebook Open Graph -->
+<meta property="og:title" content="The Brown Design Group" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://corinnebrownasid.com/" />
+<meta property="og:image" content="img/og-img.jpg" />
+<meta property="og:description" content="<?php echo $desc ?>" />
+
 <!-- Favicons -->
 <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-touch-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-touch-icon-60x60.png">
@@ -24,9 +35,7 @@
 <meta name="theme-color" content="#8c7f79">
 
 
-
 <!-- CSS Files -->
-
 <!-- Bootstrap -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
 
@@ -34,17 +43,18 @@
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
+<!-- Supersized -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/g/jquery.supersized@3.2.7(slideshow/css/supersized.css+slideshow/theme/supersized.shutter.css)">
+
 <!--Customized Style Sheet-->
 <link rel="stylesheet" href="css/style.css">
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- Javascript to be initialized before <body> -->
 <!-- jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <!-- Modernizr -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-
 
 <? if ($active == 'contact'): ?>
 <!--Google reCaptcha-->

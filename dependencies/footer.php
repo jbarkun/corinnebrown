@@ -11,5 +11,5 @@
 
 <?php if ($active == 'index' || $active == 'portfolio' || $active == 'contact' || $active == '404'): ?>
 <!-- Carousel Background -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
+<script src="https://cdn.jsdelivr.net/g/jquery.supersized@3.2.7(slideshow/js/supersized.3.2.7.min.js+slideshow/theme/supersized.shutter.min.js+slideshow/js/jquery.easing.min.js)"></script>
 <?php endif; ?>
