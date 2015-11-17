@@ -154,7 +154,7 @@ body.page-portfolio-inner {
 
 $nav-square: 60px;
 $nav-square-mobile: 100%/4;
-$nav-tray: 150px;
+$nav-tray: 250px;
 
 .slideshow-nav {
 	@include transition(0.5s);
@@ -174,7 +174,7 @@ $nav-tray: 150px;
 	.wrapper {
 		position: relative;
 	}
-	ul {
+	.wrapper > ul {
 		position: absolute;
 		right: 0;
 		top: -60px;
@@ -221,6 +221,40 @@ $nav-tray: 150px;
 	}
 }
 
+#thumb-tray {
+	position: absolute;
+	bottom: 0 !important;
+	height: 100px;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+#thumb-back {
+	bottom: 0;
+	height: 100px;
+	background: rgba($black,0.5);
+	color: $white;
+	text-align: center;
+	font: {
+		family: 'fontawesome';
+		size: 24px;
+		size: 2.4rem;
+	}
+	&:before {
+		content: '\f048';
+		position: relative;
+		top: 46%;
+	}
+}
+
+#thumb-forward {
+	@extend #thumb-back;
+	&:before {
+		content: '\f051';
+	}
+}
+
 
 #nav-toggle:before {
 	display: block;
@@ -243,7 +277,7 @@ $nav-tray: 150px;
 
 @media screen and (max-width: $breakpoint-2) {
 	.slideshow-nav {
-		ul {
+		.wrapper > ul {
 			width: 100%;
 			>li {
 				width: $nav-square-mobile;

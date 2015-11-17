@@ -34,6 +34,10 @@ $desc = "View The Brown Design Group's McCoy project at Bishop.";
 					</div>
 				</div>
 			</div>
+			<div id="thumb-tray" class="load-item">
+				<div id="thumb-back"></div>
+				<div id="thumb-forward"></div>
+			</div>
 		</div>
 	</div>
 	

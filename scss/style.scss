@@ -71,7 +71,7 @@ body.page-portfolio-inner #copyright, body.page-index #copyright  {
 }
 
 @media screen and (max-height: 630px) {
-	body.page-portfolio-inner #copyright, body.page-index #copyright {
+	body.page-index #copyright {
 		position: static;
 	}
 }
