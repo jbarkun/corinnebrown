@@ -1,6 +1,7 @@
 <?php
 $active = 'portfolio';
 $desc = "View The Brown Design Group's portfolio of outstanding interior design.";
+$keywords = "rustic interior design, rustic, mountain design, mountain home, classic interior design, houzz designer, second home,vacation home, ski home, Professional interior designer, Professional Interior decorator, ASID";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,77 +19,66 @@ $desc = "View The Brown Design Group's portfolio of outstanding interior design.
 		<div class="row">
 			
 			<!-- Portfolio Item 1 -->
-			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+			<div class="col-md-4 col-sm-6 col-xs-12">
 				<div class="hovereffect">
-					 <img class="img-responsive" src="img/portfolio/cover/baumer.jpg" alt="">
+					 <img class="img-responsive" src="img/portfolio/cover/baumer.jpg" alt="Mammoth Lakes">
 					 <div class="overlay">
-						 <h2>Baumer <span class="small">Mammoth Lakes</span></h2>
+						 <h2>Baumer <span class="small">Mammoth Lakes, CA</span></h2>
 						 <a class="info" href="portfolio-baumer.php">View</a>
 					 </div>
 				</div>
 		  </div>
 			
 			<!-- Portfolio Item 2 -->
-			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+			<div class="col-md-4 col-sm-6 col-xs-12">
 				<div class="hovereffect">
-					 <img class="img-responsive" src="img/portfolio/cover/iantuono.jpg" alt="">
+					 <img class="img-responsive" src="img/portfolio/cover/iantuono.jpg" alt="Mammoth Lakes">
 					 <div class="overlay">
-						 <h2>Iantuono <span class="small">Mammoth Lakes</span></h2>
+						 <h2>Iantuono <span class="small">Mammoth Lakes, CA</span></h2>
 						 <a class="info" href="portfolio-iantuono.php">View</a>
 					 </div>
 				</div>
 		  </div>
 			
 			<!-- Portfolio Item 3 -->
-			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+			<div class="col-md-4 col-sm-6 col-xs-12">
 				<div class="hovereffect">
-					 <img class="img-responsive" src="img/portfolio/cover/mccoy.jpg" alt="">
+					 <img class="img-responsive" src="img/portfolio/cover/mccoy.jpg" alt="Bishop">
 					 <div class="overlay">
-						 <h2>McCoy <span class="small">Bishop</span></h2>
+						 <h2>McCoy <span class="small">Bishop, CA</span></h2>
 						 <a class="info" href="portfolio-mccoy.php">View</a>
 					 </div>
 				</div>
 		  </div>
 			
 			<!-- Portfolio Item 4 -->
-			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-				<div class="hovereffect coming-soon">
-					 <img class="img-responsive" src="img/portfolio/cover/martis.jpg" alt="">
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				<div class="hovereffect">
+					 <img class="img-responsive" src="img/portfolio/cover/martis.jpg" alt="Lake Tahoe">
 					 <div class="overlay">
-						 <h2>Martis Camp <span class="small">Lake Tahoe</span></h2>
-						 <a class="info" href="#">Coming Soon</a>
+						 <h2>Danhakl, Martis Camp <br /> <span class="small">Tahoe, CA</span></h2>
+						 <a class="info" href="portfolio-danhakl.php">View</a>
 					 </div>
 				</div>
 		  </div>
 			
 			<!-- Portfolio Item 5 -->
-			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+			<div class="col-md-4 col-sm-6 col-xs-12">
 				<div class="hovereffect coming-soon">
-					 <img class="img-responsive" src="img/portfolio/cover/mccall.jpg" alt="">
+					 <img class="img-responsive" src="img/portfolio/cover/mccall.jpg" alt="Idaho">
 					 <div class="overlay">
-						 <h2>McCall <span class="small">Idaho</span></h2>
-						 <a class="info" href="#">Coming Soon</a>
-					 </div>
-				</div>
-		  </div>
-			
-			<!-- Portfolio Item 6 -->
-			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-				<div class="hovereffect coming-soon">
-					 <img class="img-responsive" src="img/portfolio/cover/danhakl.jpg" alt="">
-					 <div class="overlay">
-						 <h2>Danhakl <span class="small"></span></h2>
+						 <h2>Danhakl <span class="small">McCall, ID</span></h2>
 						 <a class="info" href="#">Coming Soon</a>
 					 </div>
 				</div>
 		  </div>
 			
 			<!-- Portfolio Item 7 -->
-			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+			<div class="col-md-4 col-sm-6 col-xs-12">
 				<div class="hovereffect coming-soon">
-					 <img class="img-responsive" src="img/portfolio/cover/comingsoon.jpg" alt="">
+					 <img class="img-responsive" src="img/portfolio/cover/palmdesert.jpg" alt="Rancho Mirage">
 					 <div class="overlay">
-						 <h2>Frerichs <span class="small">Palm Desert</span></h2>
+						 <h2>Frerichs <span class="small">Rancho Mirage, CA</span></h2>
 						 <a class="info" href="#">Coming Soon</a>
 					 </div>
 				</div>

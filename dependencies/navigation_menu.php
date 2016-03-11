@@ -1,6 +1,5 @@
 
 <div id="nav-main">
-	<div class="wrapper">
 		<nav class="navbar">
 			 <div class="container-fluid">
 				  <div class="navbar-header">
@@ -24,5 +23,4 @@
 				  </div>
 			 </div>
 		</nav>
-	</div>
 </div>

@@ -22,17 +22,14 @@ $desc = "View The Brown Design Group's Baumer project at Mammoth Lakes.";
 				<li id="nav-prev"></li>
 				<li id="nav-next"></li>
 			</ul>
-		</div>
 		<div class="slideshow-tray">
-			<div class="wrapper">
 				<div class="row">
 					<div class="col-sm-12">
 						<h1>Mammoth Lakes</h1>
 						<h2>Baumer</h2>
-						<p>Leslie Allen Photography</p>
+						<p class="portfolio-credits"><span>Photographer: Leslie Allen Photography</span> <span>Contractor: Jeff Masters</span> <span>Architect: Eric Parlee</span></p>
 					</div>
 				</div>
-			</div>
 			<div id="thumb-tray" class="load-item">
 				<div id="thumb-back"></div>
 				<div id="thumb-forward"></div>

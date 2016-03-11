@@ -40,8 +40,11 @@ $desc = "The Brown Design Group has created an impressive portfolio of work, inc
 			slide_links				:	false,	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
 			slides 					:  	[			// Slideshow Images
 												{image : 'img/portfolio/baumer/bm04.jpg'},
-												{image : 'img/portfolio/other/bk1.jpg'},
+												{image : 'img/portfolio/misc/bk1.jpg'},
 												{image : 'img/portfolio/iantuono/ia08.jpg'},
+												{image : 'img/portfolio/danhakl/dh03.jpg'},
+												{image : 'img/portfolio/misc/dh01.jpg'},
+												{image : 'img/portfolio/misc/dh02.jpg'},
 										]
 			
 		});

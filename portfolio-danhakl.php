@@ -1,5 +1,6 @@
 <?php
 $active = 'portfolio';
+$ogImg = 'http://www.corinnebrownasid.com/img/og/danhakl.jpg';
 $desc = "View The Brown Design Group's Danhakl project.";
 ?>
 <!DOCTYPE html>
@@ -22,17 +23,14 @@ $desc = "View The Brown Design Group's Danhakl project.";
 				<li id="nav-prev"></li>
 				<li id="nav-next"></li>
 			</ul>
-		</div>
 		<div class="slideshow-tray">
-			<div class="wrapper">
 				<div class="row">
 					<div class="col-sm-12">
-						<h1>Location</h1>
-						<h2>Danhakl</h2>
-						<p>Photography Credit</p>
+						<h1>Tahoe, CA</h1>
+						<h2>Danhakl, Martis Camp</h2>
+						<p class="portfolio-credits"><span>Photographer: Laura Hull Photography </span> <span>Contractor: Masters Construction</span>  <span>Architect: Eric Parlee</span></p>
 					</div>
 				</div>
-			</div>
 			<div id="thumb-tray" class="load-item">
 				<div id="thumb-back"></div>
 				<div id="thumb-forward"></div>
@@ -98,8 +96,6 @@ $desc = "View The Brown Design Group's Danhakl project.";
 													  {image : 'img/portfolio/danhakl/dh30.jpg'},
 													  {image : 'img/portfolio/danhakl/dh31.jpg'},
 													  {image : 'img/portfolio/danhakl/dh32.jpg'},
-													  {image : 'img/portfolio/danhakl/dh33.jpg'},
-													  {image : 'img/portfolio/danhakl/dh34.jpg'},
 													  {image : 'img/portfolio/danhakl/dh35.jpg'},
 													  {image : 'img/portfolio/danhakl/dh36.jpg'},
 													  {image : 'img/portfolio/danhakl/dh37.jpg'},

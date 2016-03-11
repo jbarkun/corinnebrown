@@ -23,17 +23,14 @@ $desc = "View The Brown Design Group's McCoy project at Bishop.";
 				<li id="nav-prev"></li>
 				<li id="nav-next"></li>
 			</ul>
-		</div>
 		<div class="slideshow-tray">
-			<div class="wrapper">
 				<div class="row">
 					<div class="col-sm-12">
 						<h1>Bishop</h1>
 						<h2>McCoy</h2>
-						<p>Lesley Allen Photograpy</p>
+						<p class="portfolio-credits"><span>Photographer: Leslie Allen Photography</span> <span>Contractor: Masters Construction</span> <span>Architect: Mark Vasquez</span></p>
 					</div>
 				</div>
-			</div>
 			<div id="thumb-tray" class="load-item">
 				<div id="thumb-back"></div>
 				<div id="thumb-forward"></div>

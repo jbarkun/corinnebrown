@@ -154,7 +154,11 @@ body.page-portfolio-inner {
 
 $nav-square: 60px;
 $nav-square-mobile: 100%/4;
-$nav-tray: 250px;
+$nav-tray: 210px;
+
+#supersized li {
+	background: #F3F0F0;
+}
 
 .slideshow-nav {
 	@include transition(0.5s);
@@ -173,6 +177,7 @@ $nav-tray: 250px;
 	}
 	.wrapper {
 		position: relative;
+		max-width: none;
 	}
 	.wrapper > ul {
 		position: absolute;
@@ -201,8 +206,8 @@ $nav-tray: 250px;
 .slideshow-tray {
 	width: 100%;
 	height: $nav-tray;
-	background: $white;
-	padding: 20px 0;
+	background: rgba($white,0.8);
+	border-top: 1px solid #DCD8D6;
 	h1, h2, p {
 		color: $brown-med;
 	}
@@ -218,6 +223,24 @@ $nav-tray: 250px;
 	h2 {
 		text-transform: none;
 		font-weight: 400;
+		margin-bottom: 10px;
+	}
+	p {
+		font-size: 12px;
+	}
+}
+
+.portfolio-credits {
+	span::after {
+		content: '';
+		border-right: 1px solid $brown-light;
+		padding-right: 10px;
+		margin-right: 5px;
+		height: 10px;
+		display: inline-block;
+	}
+	span:last-child::after {
+		display: none;
 	}
 }
 
@@ -228,6 +251,7 @@ $nav-tray: 250px;
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
 	box-shadow: none;
+	background: $brown-dark;
 }
 
 #thumb-back {
@@ -288,4 +312,21 @@ $nav-tray: 250px;
 	.slideshow-tray {
 		padding: 20px;
 	}
+}
+
+@media screen and (min-width: $breakpoint-4) {
+	.hovereffect {
+		h2 {
+			top: 130px;
+			font-size: 21px;
+			padding: 15px 10px;
+		}
+		a.info {
+			margin-top: 160px;
+			font-size: 18px;
+			padding: 15px 30px;
+		}
+	}
+	
+	
 }
