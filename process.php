@@ -13,8 +13,10 @@ $desc = "The Brown Design Group has created an impressive portfolio of work, inc
 
 	<?php include('dependencies/navigation_menu.php') ?>
 	<div class="row">
-		 <div class="col-md-8 col-md-offset-2">
-			  <img src="img/process/f_1.jpg" alt="Group Picture" class="mb25">
+		 <div class="col-sm-4 col-md-4 col-md-offset-1">
+			<img id="img-about" src="img/process/process.jpg">
+		</div>
+		<div class="col-sm-8 col-md-6">
 			  
 			  <p>First and foremost, Brown Design Group is professional. You can relax knowing that your vision is understood, that design concepts will be presented in an intelligent way and that a clear financial relationship will allow for a strong foundation of lasting trust.</p>
 	

@@ -40,10 +40,11 @@ $desc = "Contact The Brown Design Group to learn more about how we can design yo
 
             <h1>Connect with us</h1>
 
-            <div class="contact-sm">
-                <a href="http://www.houzz.com/badges/user/corinnebrown" target="blank" title="Find us on Houzz"><i
-                        class="fa fa-houzz"></i></a>
-                <a href="https://www.facebook.com/corinne.brown.777?fref=nf" target="blank" title="Like us on Facebook"><i
+				<div class="contact-sm">
+					 <a href="http://www.houzz.com/pro/corinnebrown/corinne-brown-asid-inc-dba-brown-design-group" target="_blank" style="display: block; margin-bottom: 10px;">
+						<img src="http://st.hzcdn.com/static/badge_22_7.png" alt="Remodeling and Home Design" width="54" height="54" border="0" />
+					 </a>
+                <a href="https://www.facebook.com/cbasid" target="blank" title="Like us on Facebook"><i
                         class="fa fa-facebook"></i></a>
                 <a href="https://www.linkedin.com/in/corinnebrown1" target="blank" title="Connect on Linkedin"><i
                         class="fa fa-linkedin"></i></a>
