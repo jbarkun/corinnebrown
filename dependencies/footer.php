@@ -1,7 +1,7 @@
 
 <div id="copyright">
 	<?php date_default_timezone_set('America/Los_Angeles'); ?>
-	Copyright &copy; Brown Design Group <?php echo date('Y') ?>
+	Copyright &copy; Brown Design Group <?php echo date('Y') ?>. <a href="http://www.ankitdesigns.com" target="_blank" title="Visit Ankit Designs">Powered by Ankit Designs.</a>
 </div>
 
 <!-- Javascript -->

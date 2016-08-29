@@ -1,6 +1,7 @@
 <?php
 $active = 'about';
 $desc = "The Brown Design Group has created an impressive portfolio of work, including outstanding mountain vacation home interior design.";
+$keywords = "rustic interior design, rustic, mountain design, mountain home, classic interior design, houzz designer, second home,vacation home, ski home, Professional interior designer, Professional Interior decorator, ASID";
 ?>
 <!doctype html>
 <html lang="en">
@@ -13,9 +14,11 @@ $desc = "The Brown Design Group has created an impressive portfolio of work, inc
 <body class="page-about">
 	
 	<?php include('dependencies/navigation_menu.php') ?>
+	
+<div class="wrapper">
 	<div class="row">
 		 <div class="col-sm-4 col-md-4 col-md-offset-1 text-right">
-			<img id="img-about" src="img/about/ab_3.jpg" alt="Photo of Corinne Brown">
+			<img id="img-about" src="img/about/ab_3.jpg" alt="Corinne Brown ASID Inc.">
 		 </div>
 		 <div class="col-sm-8 col-md-6">
 			<div class="highlight">
@@ -36,6 +39,7 @@ $desc = "The Brown Design Group has created an impressive portfolio of work, inc
 			  <img src="img/about/bg_ab.jpg" alt="Quality, intuitive, depth, character, refinement">
 		 </div>
 	</div>
+</div>
 
 
     <?php include('dependencies/footer.php') ?>

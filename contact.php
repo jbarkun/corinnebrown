@@ -2,6 +2,7 @@
 session_start();
 $active = 'contact';
 $desc = "Contact The Brown Design Group to learn more about how we can design your dream home.";
+$keywords = "rustic interior design, rustic, mountain design, mountain home, classic interior design, houzz designer, second home,vacation home, ski home, Professional interior designer, Professional Interior decorator, ASID";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -40,7 +41,7 @@ $desc = "Contact The Brown Design Group to learn more about how we can design yo
 
             <h1>Connect with us</h1>
 
-				<div class="contact-sm">
+            <div class="contact-sm">
 					 <a href="http://www.houzz.com/pro/corinnebrown/corinne-brown-asid-inc-dba-brown-design-group" target="_blank" style="display: block; margin-bottom: 10px;">
 						<img src="http://st.hzcdn.com/static/badge_22_7.png" alt="Remodeling and Home Design" width="54" height="54" border="0" />
 					 </a>

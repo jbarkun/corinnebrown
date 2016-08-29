@@ -299,6 +299,25 @@ $nav-tray: 210px;
 	content: '\f04e';
 }
 
+.portfolio-cta {
+	position: absolute;
+	top: -60px;
+	left: 20px;
+	> a {
+		display: inline-block;
+		border: 1px solid $brown-med;
+		color: $brown-med;
+		text-transform: uppercase;
+		padding: 15px 20px;
+		@include transition(0.4s);
+		background: rgba($white, 0.8);
+		&:hover {
+			background: $brown-med;
+			color: $white;
+		}
+	}
+}
+
 @media screen and (max-width: $breakpoint-2) {
 	.slideshow-nav {
 		.wrapper > ul {
@@ -311,6 +330,9 @@ $nav-tray: 210px;
 	}
 	.slideshow-tray {
 		padding: 20px;
+	}
+	.portfolio-cta {
+		top: -120px;
 	}
 }
 

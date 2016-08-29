@@ -1,6 +1,7 @@
 <?php
 $active = 'process';
-$desc = "The Brown Design Group has created an impressive portfolio of work, including outstanding mountain vacation home interior design.";
+$desc = "Corinne and her firm can execute very large projects, beginning in the architectural phase and see them through to perfect completion addressing every detail.";
+$keywords = "rustic interior design, rustic, mountain design, mountain home, classic interior design, houzz designer, second home,vacation home, ski home, Professional interior designer, Professional Interior decorator, ASID";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,10 +14,10 @@ $desc = "The Brown Design Group has created an impressive portfolio of work, inc
 
 	<?php include('dependencies/navigation_menu.php') ?>
 	<div class="row">
-		 <div class="col-sm-4 col-md-4 col-md-offset-1">
+		<div class="col-sm-4 col-md-4 col-md-offset-1">
 			<img id="img-about" src="img/process/process.jpg">
 		</div>
-		<div class="col-sm-8 col-md-6">
+		 <div class="col-sm-8 col-md-6">
 			  
 			  <p>First and foremost, Brown Design Group is professional. You can relax knowing that your vision is understood, that design concepts will be presented in an intelligent way and that a clear financial relationship will allow for a strong foundation of lasting trust.</p>
 	

@@ -13,9 +13,9 @@ $desc = "View The Brown Design Group's Iantuono project at Mammoth Lakes.";
 	<?php include('dependencies/navigation_menu.php') ?>
 
 	
-	
 	<div class="slideshow-nav tray-hidden">
 		<div class="wrapper">
+			<div class="portfolio-cta"><a href="files/Iantuono-Residence.pdf" target="_blank">View Article</a></div>
 			<ul>
 				<li id="nav-toggle"></li>
 				<li id="nav-play"></li>

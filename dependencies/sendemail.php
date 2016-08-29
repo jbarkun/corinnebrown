@@ -42,16 +42,16 @@ $resp = $recaptcha->verify($_POST['g-recaptcha-response'], $_SERVER['REMOTE_ADDR
 if ($resp->isSuccess()) {
     $mail = new PHPMailer;
     $mail->isSMTP();
-    $mail->Host = 'smtp.gmail.com';
+    $mail->Host = 'spectrum.websitewelcome.com';
     $mail->SMTPAuth = true;
-    $mail->Username = 'boris@ankitdesigns.com';
-    $mail->Password = 'secret';
-    $mail->SMTPSecure = 'tls';
-    $mail->Port = 587;
+    $mail->Username = 'do-not-reply@corinnebrownasid.com';
+    $mail->Password = 'dReh6phE';
+    $mail->SMTPSecure = 'ssl';
+    $mail->Port = 465;
 
     $mail->From = $_POST['email'];
     $mail->FromName = $_POST['name'];
-    $mail->addAddress('boris@ankitdesigns.com');
+    $mail->addAddress('contact@designbdg.com');
     $mail->addReplyTo($_POST['email'], $_POST['name']);
     $mail->isHTML(true);
 
